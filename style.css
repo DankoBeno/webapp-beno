@@ -1,0 +1,15 @@
+:root{
+    --bg:#ffffff; --fg:#111;
+  }
+  [data-theme="dark"]{ --bg:#111; --fg:#eee; }
+  
+  body{
+    background:var(--bg);
+    color:var(--fg);
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+  }
+  header{ display:flex; justify-content:space-between; align-items:center; }
+  button{ padding:0.5rem 1rem; margin:0.4rem 0; cursor:pointer; }
+  .control{ margin-top:1rem; }
+  
