@@ -2,7 +2,7 @@
 
 Jednoduchá demo webová aplikácia pre model Smart Home aplikácie.
 Stránka je dostupná na:
-`https://DankoBeno.github.io/webapp-beno/`
+`https://dankobeno.github.io/webapp-beno/`
 
 ## Obsah projektu
 - `index.html` – hlavná stránka
