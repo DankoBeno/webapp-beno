@@ -1,15 +1,95 @@
-:root{
-    --bg:#ffffff; --fg:#111;
+:root {
+    --bg: #f4f4f4;
+    --fg: #111;
+    --card-bg: #fff;
+    --primary: #8DC63F; /* Loxone zelená */
+    --secondary: #2196f3;
   }
-  [data-theme="dark"]{ --bg:#111; --fg:#eee; }
   
-  body{
-    background:var(--bg);
-    color:var(--fg);
-    font-family: Arial, sans-serif;
-    padding: 1rem;
+  [data-theme="dark"] {
+    --bg: #121212;
+    --fg: #eee;
+    --card-bg: #1e1e1e;
   }
-  header{ display:flex; justify-content:space-between; align-items:center; }
-  button{ padding:0.5rem 1rem; margin:0.4rem 0; cursor:pointer; }
-  .control{ margin-top:1rem; }
+  
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    width: 380px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    margin: 0.4rem 0.3rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    background: #7ab22e;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+  
+  #themeToggle {
+    background: var(--secondary);
+  }
+  
+  #themeToggle:hover {
+    background: #1976d2;
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  #notification {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary);
+  }
   
