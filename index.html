@@ -7,20 +7,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>SmartHomeApp — demo</h1>
-    <button id="themeToggle">Prepnúť tému</button>
-  </header>
+  <div class="app-card">
+    <header>
+      <h1>SmartHomeApp — demo</h1>
+      <button id="themeToggle">Prepnúť tému</button>
+    </header>
 
-  <main>
-    <section class="control">
-      <h2>Svetlá</h2>
-      <button id="btnToggle">Zapnúť / Vypnúť svetlo</button>
-      <button id="btnNotify">Zobrať info</button>
-      <p id="status">Stav: neznámy</p>
-      <div id="notification" aria-live="polite"></div>
-    </section>
-  </main>
+    <main>
+      <section class="control">
+        <h2>Svetlá</h2>
+        <button id="btnToggle">Zapnúť / Vypnúť svetlo</button>
+        <button id="btnNotify">Zobrať info</button>
+        <p id="status">Stav: neznámy</p>
+        <div id="notification" aria-live="polite"></div>
+      </section>
+    </main>
+
+  </div>
 
   <script src="app.js"></script>
 </body>
